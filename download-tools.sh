@@ -94,7 +94,7 @@ pushd downloads >/dev/null
 			ISO_DIR=payload
 			"${SEVENZIP}" x -o${ISO_DIR} payload/*.iso
 		else
-			ISO_DIR=/mnt/cdrom
+			ISO_DIR=/mnt/isodir
 			sudo mkdir -p ${ISO_DIR}
 			sudo mount -o loop payload/*.iso ${ISO_DIR}
 		fi
